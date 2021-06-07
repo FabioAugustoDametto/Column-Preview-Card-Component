@@ -26,14 +26,26 @@ body {
 .card {
   width: 307px;
 }
-.card:nth-child(1) span a:hover {
+.card:nth-child(1) span {
   color: #e38826;
 }
-.card:nth-child(2) span a:hover {
+.card:nth-child(1) span:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+.card:nth-child(2) span {
   color: #006970;
 }
-.card:nth-child(3) span a:hover {
+.card:nth-child(2) span:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+.card:nth-child(3) span {
   color: #004241;
+}
+.card:nth-child(3) span:hover {
+  background-color: #004241;
+  color: #f2f2f2;
 }
 .card-inner {
   display: grid;
@@ -61,8 +73,6 @@ body {
   padding: 10px;
   border-radius: 30px;
   cursor: pointer;
-}
-.card-inner-button span:hover {
   background-color: #f2f2f2;
 }
 .card-inner-button span a {

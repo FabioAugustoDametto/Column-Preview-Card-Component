@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  justify-content: center;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 307px;
+}
+.card:nth-child(1) span a:hover {
+  color: #e38826;
+}
+.card:nth-child(2) span a:hover {
+  color: #006970;
+}
+.card:nth-child(3) span a:hover {
+  color: #004241;
+}
+.card-inner {
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+  gap: 30px;
+  padding: 47px;
+}
+.card-inner-title {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  font-size: 1.7rem;
+}
+.card-inner-content {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+}
+.card-inner-content p {
+  margin-bottom: 5px;
+}
+.card-inner-button {
+  color: #f2f2f2;
+}
+.card-inner-button span {
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.card-inner-button span:hover {
+  background-color: #f2f2f2;
+}
+.card-inner-button span a {
+  font-size: 15px;
+  padding: 18px;
+}
+
+.one {
+  background-color: #e38826;
+}
+
+.two {
+  background-color: #006970;
+}
+
+.three {
+  background-color: #004241;
+}
+
+@media (min-width: 920px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container .one {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .container .three {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+@media (max-width: 919px) {
+  .one {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .three {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
